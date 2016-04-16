@@ -10,10 +10,8 @@ module BubbleSort
 
     i = array.length - 1
     while i > 0
-      j = 0
-      while j < i
+      for j in 0...i
         swap(array, j, j + 1) if array[j] > array[j + 1]
-        j+= 1
       end
       i-= 1
     end
