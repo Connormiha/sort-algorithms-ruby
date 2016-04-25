@@ -1,10 +1,10 @@
 require "test/unit"
 
-["bubble", "bubble_v2", "insertion", "insertion_v2", "cocktail", "comb"].each do |item|
+["bubble", "bubble_v2", "insertion", "insertion_v2", "cocktail", "comb", "heap"].each do |item|
   require_relative "../src/#{item}"
 end
 
-$tests = [BubbleSort, BubbleSort_v2, InsertionSort, InsertionSort_v2, CocktailSort, CombSort]
+$tests = [BubbleSort, BubbleSort_v2, InsertionSort, InsertionSort_v2, CocktailSort, CombSort, HeapSort]
 
 class TestSort < Test::Unit::TestCase
 
